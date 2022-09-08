@@ -20,8 +20,8 @@ func main() {
 	if sillyGirl.GetBool("anti_kasi") {
 		go utils.MonitorGoroutine()
 	}
-	port := sillyGirl.GetString("port", "8080")
-	logs.Info("Http服务已运行(%s)。", sillyGirl.GetString("port", "8080"))
+	port := sillyGirl.GetString("port", "7070")
+	logs.Info("Http服务已运行(%s)。", sillyGirl.GetString("port", "7070"))
 	go core.Server.Run("0.0.0.0:" + port)
 	logs.Info("关注频道 https://t.me/kczz2021 获取最新消息。")
 	d := false
